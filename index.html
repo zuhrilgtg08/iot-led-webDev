@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/styles.css"/>
+    <title>Iot - WebDev - 2024</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">Zuhril IoT</div>
+            <div class="navbar-menu" id="navbarMenu">
+                <a href="/" class="navbar-item">Home</a>
+                <a href="#" class="navbar-item">About</a>
+                <a href="#" class="navbar-item">Services</a>
+                <a href="#" class="navbar-item">Contact</a>
+            </div>
+            <div class="navbar-toggle" id="navbarToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Prototype Automation</h1>
+        <div class="control-buttons">
+            <button class="control-btn" id="btnAllOn" onclick="setTurnAllOn()">All On</button>
+            <button class="control-btn" id="btnAllOff" onclick="setTurnAllOff()">All Off</button>
+        </div>
+        <section class="card-container">
+            <div class="card">
+                <img src="assets/images/led-off.png" id="imgTamu" alt="Card Image" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Ruang Tamu</h3>
+                    <p class="card-description">
+                        Mengontrol lampu di ruang tamu, menyalakan dan mematikan lampu.
+                    </p>
+                    <button class="card-btn" onclick="setTamuFunction()" id="btnLedTamu">Turn Off</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/images/led-off.png" id="imgKerja" alt="Card Image" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Kamar Kerja</h3>
+                    <p class="card-description">
+                        Mengontrol lampu di kamar Kerja, menyalakan dan mematikan lampu.
+                    </p>
+                    <button class="card-btn" onclick="setKerjaFunction()" id="btnLedKerja">Turn Off</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/images/led-off.png" id="imgMakan" alt="Card Image" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Ruang Makan</h3>
+                    <p class="card-description">
+                        Mengontrol lampu di ruang makan, menyalakan dan mematikan lampu.
+                    </p>
+                    <button class="card-btn" onclick="setMakanFunction()" id="btnLedMakan">Turn Off</button>
+                </div>
+            </div>
+             <div class="card">
+                <img src="assets/images/led-off.png" id="imgTeras" alt="Card Image" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Teras Luar</h3>
+                    <p class="card-description">
+                        Mengontrol lampu di teras area luar, menyalakan dan mematikan lampu.
+                    </p>
+                    <button class="card-btn" onclick="setTerasFunction()" id="btnLedTeras">Turn Off</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Main Js -->
+    <script src="js/main.js"></script>
+</body>
+</html>
